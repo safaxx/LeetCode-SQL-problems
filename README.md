@@ -50,13 +50,13 @@ from department d join employee e on d.id = e.departmentId)<br>
 select Department,Employee, salary from highest_cte<br>
 where rank <=3<br>
 
-<b>[9.Duplicate Emails](https://leetcode.com/problems/duplicate-emails/description/)</b>
+<b>[9.Duplicate Emails](https://leetcode.com/problems/duplicate-emails/description/)</b><br>
 select Email <br>
 from Person<br>
 group by Email<br>
 having count(*) > 1<br>
 
-[10. Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/description/)<br>
+<b>[10. Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/description/)</b><br>
 with cte as (select  top 1 customer_number, count(customer_number) as highest_order<br>
 from orders<br>
 group by customer_number order by highest_order  desc)<br>
