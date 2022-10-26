@@ -1,6 +1,0 @@
-<b></b>
-<b>1. Customers Who Never Order</b>
-[https://leetcode.com/problems/customers-who-never-order/description/](Question)
-select name as Customers
-from customers c --join orders o on c.id = o.customerid
-where c.id not in (select customerid from orders)
